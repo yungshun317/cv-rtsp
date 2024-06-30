@@ -1,6 +1,6 @@
 import cv2
 
-rtsp_urls = ["rtsp://localhost:8554/stream"] * 8
+rtsp_urls = ["rtsp://120.125.10.220:554/chID=1&streamType=main"] * 1
 window_titles = ["frame_" + str(i) for i in range(8)]
 
 cam = [cv2.VideoCapture(i) for i in rtsp_urls]
